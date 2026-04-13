@@ -1,0 +1,94 @@
+.sidebar {
+  width: 220px;
+  min-height: 100%;
+  background: linear-gradient(to bottom, #1B5E3B, #0D3B2E);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+}
+
+.sidebar-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-top: 2px;
+}
+
+.logo-image {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  color: #f5f0e8;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.nav-item.active {
+  background-color: #194c34;
+  color: #f5c400;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 8px;
+  bottom: 8px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: #f5c400;
+}
+
+.sidebar-bottom {
+  padding-bottom: 10px;
+}
+
+.new-session-btn {
+  width: 100%;
+  background-color: #f5c400;
+  color: #111111;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.new-session-btn:hover {
+  opacity: 0.9;
+}
